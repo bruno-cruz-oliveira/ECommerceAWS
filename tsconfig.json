@@ -1,0 +1,65 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": [
+      "es2022"
+    ],
+    "declaration": true,
+    "strict": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "noUnusedLocals": false,
+    "noUnusedParameters": false,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": false,
+    "inlineSourceMap": true,
+    "inlineSources": true,
+    "experimentalDecorators": true,
+    "strictPropertyInitialization": false,
+    "skipLibCheck": true,
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "baseUrl": "./",
+    "paths": {
+      "/opt/nodejs/productsLayer": [
+        "lambda/products/layers/productsLayer/nodejs/productRepository"
+      ],
+      "/opt/nodejs/productEventsLayer": [
+        "lambda/products/layers/productEventsLayer/nodejs/productEvent"
+      ],
+      "/opt/nodejs/ordersLayer": [
+        "lambda/orders/layers/ordersLayer/nodejs/orderRepository"
+      ],
+      "/opt/nodejs/ordersApiLayer": [
+        "lambda/orders/layers/ordersApiLayer/nodejs/orderApi"
+      ],
+      "/opt/nodejs/orderEventsLayer": [
+        "lambda/orders/layers/orderEventsLayer/nodejs/orderEvent"
+      ],
+      "/opt/nodejs/orderEventsRepositoryLayer": [
+        "lambda/orders/layers/orderEventsRepositoryLayer/nodejs/orderEventsRepository"
+      ],
+      "/opt/nodejs/invoiceTransaction": [
+        "lambda/invoices/layers/invoiceTransaction/nodejs/invoiceTransaction"
+      ],
+      "/opt/nodejs/invoiceRepository": [
+        "lambda/invoices/layers/invoiceRepository/nodejs/invoiceRepository"
+      ],
+      "/opt/nodejs/invoiceWSConnection": [
+        "lambda/invoices/layers/invoiceWSConnection/nodejs/invoiceWSConnection"
+      ],
+      "/opt/nodejs/authUserInfo": [
+        "lambda/auth/layers/authUserInfo/nodejs/authUserInfo"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "cdk.out"
+  ]
+}

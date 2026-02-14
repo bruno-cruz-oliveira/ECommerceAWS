@@ -1,0 +1,30 @@
+{
+  "name": "e_commerce_aws",
+  "version": "0.1.0",
+  "bin": {
+    "e_commerce_aws": "bin/e_commerce_aws.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.160",
+    "@types/jest": "^30",
+    "@types/node": "^24.10.1",
+    "@types/uuid": "^10.0.0",
+    "aws-cdk": "2.1104.0",
+    "aws-sdk": "^2.1693.0",
+    "jest": "^30",
+    "ts-jest": "^29",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.9.3"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "^2.236.0",
+    "aws-xray-sdk": "^3.12.0",
+    "constructs": "^10.0.0"
+  }
+}
